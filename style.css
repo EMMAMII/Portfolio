@@ -1,0 +1,72 @@
+body{
+    font-family: sans-serif;
+}
+
+:root{
+    --beige-color: beige;
+    --orangered-color: orangered;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--beige-color);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+li {
+    display: inline-block;
+    margin: 5px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+footer p{
+    background-color: var(--beige-color);
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+i {
+    font-size: 20px;
+    color: var(--orangered-color);
+}
+
+@media(max-width: 400px) {
+    header{
+        flex-direction: column;
+    }
+}
+
+.project, .skill{
+    background-color: var(--orangered-color);
+    padding: 10px;
+    margin: 10px;
+    border-radius:10px;
+    text-align: center;
+}
+
+.projects-container, .skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project i, .skill i {
+    color: black;
+    font-size: 25px;
+}
+
+#projects h2,
+#skills h2{
+    text-align: center;
+}
+html{
+     background-image: -moz-linear-gradient(rgb(242, 20, 57), red);
+}
